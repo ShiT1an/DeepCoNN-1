@@ -16,4 +16,3 @@ venv
 requirements.txt
 cnn.h5
 tf_logs/
-Team Files/
