@@ -13,3 +13,7 @@ __pycache__/
 data
 venv
 .DS_Store
+requirements.txt
+cnn.h5
+tf_logs/
+Team Files/

@@ -22,3 +22,9 @@ def get_embed_and_pad_func(i_seq_len, u_seq_len, pad_value, embedding_map):
                 [pad_value] * (i_seq_len - len(reviews))
         return row
     return embed
+
+
+def get_embed_aspects(aspects, embedding_map):
+    embed_aspects = list(map(lambda word: embedding_map.get(word)
+            if word in embedding_map else print('主题词未在Embedding_map中找到映射'), aspects))
+    return embed_aspects
