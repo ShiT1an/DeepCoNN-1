@@ -3,7 +3,7 @@ import numpy as np
 
 
 def init_embeddings_map(fname):
-    with open(os.path.join("data", "glove.6B", fname)) as glove:
+    with open(os.path.join("data", "glove.6B", fname), 'r', encoding='utf-8') as glove:
         return {l[0]: np.asarray(l[1:], dtype="float32") for l in
                 [line.split() for line in glove]}
 

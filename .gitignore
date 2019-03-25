@@ -14,5 +14,5 @@ data
 venv
 .DS_Store
 requirements.txt
-cnn.h5
+*.h5
 tf_logs/
