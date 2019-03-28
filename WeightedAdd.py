@@ -13,7 +13,6 @@ class WeightedAdd(Layer):
         super(WeightedAdd, self).build(input_shape)
     
     def call(self, x):
-        print(x.shape, self.kernel.shape)
         return K.dot(x, self.kernel)
     
     def compute_output_shape(self, input_shape):
